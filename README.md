@@ -27,7 +27,7 @@ The system supports both online and offline operation, allowing local speed moni
 
 ## System Components
 
-*Hardware Components
+## Hardware Components
 
 - ESP32 development board
 - Two IR sensors
@@ -39,7 +39,7 @@ The system supports both online and offline operation, allowing local speed moni
 - Breadboard and jumper wires
 - Power supply
 
- *Software and Technologies
+ ## Software and Technologies
 
 - Arduino IDE
 - Embedded C/C++
@@ -77,30 +77,6 @@ Speed (km/h) = (Distance (m) / Time (s)) × 3.6
 
 The calculated speed is compared with the predefined speed limit. If the measured speed exceeds the limit, the system activates the overspeed warning.
 
-
-## System Workflow
-
-Vehicle
-↓
-IR Sensor 1
-↓
-ESP32 records start time
-↓
-IR Sensor 2
-↓
-ESP32 records end time
-↓
-Speed Calculation
-↓
-Compare with Speed Limit
-↓
-┌───────────────────────┐
-│                       │
-Safe Speed          Overspeed
-│                       │
-Green LED            Red LED
-LCD Display          Buzzer Alert
-                    Telegram Alert
 
 ## IoT and Telegram Alert
 

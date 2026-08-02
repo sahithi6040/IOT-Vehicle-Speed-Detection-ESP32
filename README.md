@@ -113,7 +113,37 @@ When Wi-Fi is unavailable:
 - Green and red LED indications continue to work.
 - Buzzer continues to provide overspeed alerts.
 - Telegram notifications are unavailable.
-  
+
+
+##  Project Demonstration
+
+### 🔹 Complete Hardware Setup
+
+The complete ESP32-based vehicle speed detection prototype, including the ESP32 development board, IR sensors, LCD display, LEDs, buzzer, breadboard, and power supply.
+
+![Project Setup](project_setup.jpg)
+
+
+### 🔹 Safe Speed Detection
+
+The system detects the vehicle speed and displays the measured speed on the LCD. When the speed is within the predefined limit, the LCD shows **"Safe Speed"**, indicating normal operation.
+
+![Safe Speed Detection](safe_speed_demo.jpg)
+
+
+### 🔹 Overspeed Detection
+
+When the detected speed exceeds the predefined speed limit, the LCD displays **"OVERSPEED!"**. At the same time, the red LED turns ON and the buzzer is activated to provide an immediate local warning.
+
+![Overspeed Detection](overspeed_demo.png)
+
+
+### 🔹 Telegram Alert Notification
+
+During an overspeed event, the ESP32 sends a real-time notification to the configured Telegram bot over Wi-Fi, allowing remote monitoring and instant alerts.
+
+![Telegram Alert](telegram_alerts.jpg)
+
 
 ## Applications
 
